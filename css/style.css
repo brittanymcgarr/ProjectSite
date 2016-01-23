@@ -1,0 +1,475 @@
+/*
+CSS for the U(2)TM project demo.
+*/
+
+/* 
+Basic classes and layouts. These are general types that would default when not directed with a div
+id or class. Cascading means that more specific typing overwrites less, and those definitions below are
+(with the exception of div id) applied over those above.
+*/
+
+/* * means everything in the content of the page */
+* {
+	/*
+	This site was written for Mozilla, but you can even specify how certain browsers should
+	handle the layout.
+	*/
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* HTML keywords are reserved and will apply to those elements. */
+body, input, textarea {
+	/* Font families change the font (duh!) but can also take fonts from other online sources like Google */
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	/* Color is in hex in RGB 1-byte depths */
+	color: #565656;
+}
+
+/* 
+   This body will borrow a background image along with a color. The image has to have alpha channels
+   to display the color through. Otherwise, the last-listed tag is what shows up.
+*/
+body {
+	background-color: #e8e8e8;
+	background-image: url('images/bg2.png');
+}
+
+a {
+	color: #99c3ff;
+}
+
+/* Apply styling to more than one element with commas */
+strong, b {
+	font-weight: 700;
+	color: #1b252a;
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	color: #1b252a;
+}
+
+h2 a, h4 a, h5 a, h6 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header {
+	margin: 0 0 2em 0;
+}
+
+blockquote {
+	border-left: solid 5px #ddd;
+	padding: 1em 0 1em 2em;
+	font-style: italic;
+}
+
+em, i {
+	font-style: italic;
+}
+
+hr {
+	border: 0;
+	border-top: solid 1px #ddd;
+	padding: 1.5em 0 0 0;
+	margin: 1.75em 0 0 0;
+}
+
+sub {
+	position: relative;
+	top: 0.5em;
+	font-size: 0.8em;
+}
+
+sup {
+	position: relative;
+	top: -0.5em;
+	font-size: 0.8em;
+}
+
+table {
+	width: 100%;
+}
+
+table.style1 {
+}
+
+table.style1 tbody tr:nth-child(2n+2) {
+	background: #f4f4f4;
+}
+
+table.style1 td {
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+table.style1 th {
+	text-align: left;
+	font-weight: 700;
+	padding: 0.75em 1em 0.75em 1em;
+}
+
+table.style1 thead {
+	border-bottom: solid 1px #ddd;
+}
+
+table.style1 tfoot {
+	border-top: solid 1px #ddd;
+	background: #eee;
+}
+
+table.style1 tbody {
+}
+
+br.clear {
+	clear: both;
+}
+
+p, ul, ol, dl, table {
+	margin-bottom: 1em;
+}
+
+section, article {
+	margin-bottom: 3em;
+}
+
+section > :last-child, article > :last-child {
+	margin-bottom: 0;
+}
+
+section > .inner > :last-child, article > .inner > :last-child {
+	margin-bottom: 0;
+}
+
+section:last-child, article:last-child {
+	margin-bottom: 0;
+}
+
+/***********************************************************************************************/
+/*                             More specific naming and div types                              */
+/***********************************************************************************************/
+
+/* Div classes are denoted with a period */
+.wrapper {
+	position: relative;
+}
+
+/* 
+	Div ids are denoted with the hash and have higher specificity. That means that following styling will 
+	not apply unless you specifically include the div id's name in the listing
+*/
+#left-sidebar {
+	background-color: #001e4d;
+	background-image: url('images/bg1.png');
+	color: #929da4;
+	text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+	float: left;
+	width: 20%;
+	padding: 3em 1.35em 1em 1.15em;
+	box-shadow: inset -0.1em 0em 0.35em 0em rgba(0,0,0,0.15);
+	height: 90%;
+}
+
+/* 
+	You can specify children of certain elements by listing them without the comma. So, this code
+	targets nav children of the left-sidebar divs.
+*/
+#left-sidebar nav {
+	position: relative;
+}
+
+/* Multiple element selection means listing the parent-child relationship for each. */
+#left-sidebar section:before, #left-sidebar nav:before {
+	content: '';
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+	border-color: #171E29;
+	border-color: rgba(0,0,0,0.25);
+	box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.075), 0px 1px 0px 0px rgba(255,255,255,0.075);
+	display: block;
+}
+
+#left-sidebar strong, #left-sidebar b {
+	color: #fff;
+}
+
+#left-sidebar a {
+	color: #d4dde0;
+}
+
+#left-sidebar ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+
+#left-sidebar li a {
+    display: block;
+    padding: 8px 0px 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#left-sidebar li a:hover {
+    background-color: #1a74ff;
+    background-image: url('images/bg1.png');
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+/* Content panels */
+#content {
+	height: 100%;
+	width: 80%;
+	box-shadow: 0 0 0.25em 0em rgba(0,0,0,0.25);
+	float: left;
+}
+
+#user-content h1 {
+    border-bottom: 1px solid #80beff;
+}
+
+.logo-splash {
+    height: 15%;
+    width: 100%;
+    background-color: #80b2ff;
+    background-image: url('images/bg1.png');
+    padding: 1.5em 1.5em 1.5em 1.5em;
+}
+
+#user-content {
+    padding: 5px;
+}
+
+#user-content h1 {
+    border-bottom: 1px solid #7094db;
+}
+
+#status-panel {
+    background-color: #efefef;
+    padding: 20px;
+    margin: 1px;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#news-article {
+    padding: 5px;
+    margin: 1px;
+}
+
+#news-article h1 {
+    font-size: 1em;
+}
+
+#messages-panel {
+    background-color: #efefef;
+    padding: 20px;
+    margin: 1px;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#team-panel {
+    background-color: #efefef;
+    padding: 20px;
+    margin: 1px;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#team-panel img {
+    width: 15%;
+    height: 15%;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    border: 5px;
+    color: #efefef;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#team-panel h1 {
+    border: none;
+}
+
+#team-panel p {
+    border: 5px;
+    padding: 5px;
+}
+
+/* Footer */
+.footer {
+	background-color: #003280;
+	background-image: url('images/bg1.png');
+	color: #929da4;
+	text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+	clear: both;
+	width: 100%;
+	padding: 3em 1.35em 1em 1.15em;
+	box-shadow: inset -0.1em 0em 0.35em 0em rgba(0,0,0,0.15);
+	height: 5%;
+	align-items: center;
+}
+
+/* Calendar */
+
+.section-calendar {
+}
+
+.section-calendar .inner-calendar {
+	position: relative;
+	background-color: #272E39;
+	background-color: rgba(0,0,0,0.15);
+	border-radius: 0.4em;
+	padding: 0.75em 0.5em 0.75em 0.5em;
+	box-shadow: 0 0 0 1px rgba(255,255,255,0.05), inset 0 0 0.25em 0 rgba(0,0,0,0.25);
+}
+
+.section-calendar caption {
+	font-weight: 700;
+	color: #fff;
+	margin: 0 0 0.25em 0;
+	padding: 5px;
+	border-radius: 3px;
+	background-color: #003280;
+	background-image: url('images/bg2.png');
+}
+
+.section-calendar table {
+	margin: 0 auto;
+}
+
+.section-calendar tr {
+}
+
+.section-calendar td, .section-calendar th {
+	cursor: default;
+	padding: 0.35em 0 0.35em 0;
+	border-top: solid 1px rgba(0,0,0,0.25);
+	box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.075);
+}
+
+.section-calendar th {
+	font-weight: 700;
+	color: #fff;
+}
+
+.section-calendar td a, .section-calendar td span {
+	display: block;
+	margin: 0 auto;
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	line-height: 1.4em;
+	border-radius: 0.4em;
+	-moz-transition: background-color .25s ease-in-out;
+	-webkit-transition: background-color .25s ease-in-out;
+	-o-transition: background-color .25s ease-in-out;
+	-ms-transition: background-color .25s ease-in-out;
+	transition: background-color .25s ease-in-out;
+	text-decoration: none;
+}
+
+.section-calendar td a {
+	color: #fff;
+	font-weight: 700;
+}
+
+.section-calendar td a:hover {
+	background-color: rgba(200,225,255,0.1);
+	color: #fff;
+}
+
+.section-calendar td.today a {
+	background-color: #c94663;
+	background-image: url('images/bg1.png');
+	box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.15), 0 0.025em 0.15em 0em rgba(0,0,0,0.25);
+	color: #fff !important;
+}
+
+/* Copyright panel */
+#copyright {
+}
+
+#copyright p {
+	opacity: 0.75;
+}
+
+#copyright a {
+	color: inherit !important;
+}
+
+#copyright:before {
+	content: '';
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+	border-color: #171E29;
+	border-color: rgba(0,0,0,0.25);
+	box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.075), 0px 1px 0px 0px rgba(255,255,255,0.075);
+	display: block;
+}
+
+/* Logo panel */
+#logo {
+	background-color: #003a99;
+	background-image: url('images/bg1.png');
+	padding: 1.75em 0.5em 1.75em 0.5em;
+	border-radius: 0.4em;
+	height: 5.0em;
+	text-align: center;
+	box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.15), 0 0.025em 0.15em 0em rgba(0,0,0,0.25);
+}
+
+#logo h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	font-size: 2.5em;
+	letter-spacing: 0.1em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer li {
+    float: left;
+    margin: 5px;
+    border-right: 1px solid #001f4d;
+}
+
+.footer li:last-child {
+    border-right: none;
+}
+
+.footer li a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer li a:hover {
+    background-color: #1a74ff;
+    background-image: url('images/bg1.png');
+    border-radius: 5px;
+    color: #ffffff;
+}
