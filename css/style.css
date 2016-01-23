@@ -269,6 +269,11 @@ section:last-child, article:last-child {
     font-size: 1em;
 }
 
+#news-article h2 {
+    float: right;
+    font-size: 0.8em;
+}
+
 #messages-panel {
     background-color: #efefef;
     padding: 20px;
