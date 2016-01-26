@@ -94,6 +94,7 @@ sup {
 }
 
 table {
+    text-align: center;
 	width: 95%;
 }
 
@@ -124,6 +125,7 @@ table.style1 tfoot {
 }
 
 table.style1 tbody {
+
 }
 
 br.clear {
