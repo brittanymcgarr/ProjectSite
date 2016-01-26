@@ -3,7 +3,7 @@
     <head>
         <title>Project Messages</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
 
     <body>
@@ -18,11 +18,11 @@
 			<nav id="navigation">
 				<!-- Lists come in unordered (ul) and ordered numerically (ol) -->
 				<ul>
-					<li><a href="index.html">U<sup>2</sup>TM</a></li>
-					<li><a href="about.html">About UTM</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="project_messages.html">Project Messages</a></li>
-					<li><a href="materials.html">Materials</a></li>
+					<li><a href="../index.html">U<sup>2</sup>TM</a></li>
+					<li><a href="../about.html">About UTM</a></li>
+					<li><a href="../team.html">Team</a></li>
+					<li><a href="../project_messages.html">Project Messages</a></li>
+					<li><a href="../materials.html">Materials</a></li>
 				</ul>
 			</nav>
 
@@ -100,15 +100,14 @@
                 <p>A University of Nevada, Reno CS 426 Spring 2016 Capstone Project</p>
             </div>
             <div id="messages-panel">
-                <h2>Messages</h2>
-			    <!--This where you point to your message -->
-                <ul>
-					<li><a href="messages/camillebourquin_01262016.html">Camille Bourquin 01/26/2016</a></li>
-                </ul>
+            <!--******** Fill out this form *******-->
+				<h2>Title</h2>
+				<h4>By: Your Name</h4>
+				<!--This is Where you should write your messages -->
+            	<p>Write your message here :)</p>
+            <--****** Now that you have written the message, add a link to it on the messages and index page *******-->
             </div>
         </div>
-
-
     </div>
 
     <!-- Footer will contain the contact and site-general navigation and sit below the wrapper class -->
@@ -117,11 +116,11 @@
 			<nav id="site-nav">
 				<ul>
 					<!-- a href sends the page to the link provided (STUB: empty for now) -->
-					<li><a href="index.html">U<sup>2</sup>TM</a></li>
-					<li><a href="about.html">About UTM</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="project_messages.html">Project Messages</a></li>
-					<li><a href="materials.html">Materials</a></li>
+					<li><a href="../index.html">U<sup>2</sup>TM</a></li>
+					<li><a href="../about.html">About UTM</a></li>
+					<li><a href="../team.html">Team</a></li>
+					<li><a href="../project_messages.html">Project Messages</a></li>
+					<li><a href="../materials.html">Materials</a></li>
 				</ul>
 			</nav>
 		</div>
