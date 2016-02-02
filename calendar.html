@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Comments start and end like this -->
+
+<!-- Header info sets up the scripts, styles, and external needs of the page -->
+<head>
+	<title>Team Hours</title>
+	<meta charset="utf-8">
+
+	<!-- Telling the page that there will be css styling -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Body is what will be displayed on the screen and its layout -->
+<body>
+	<!-- Divs are a better way to conceptually block out a page than tables to arrange elements, but they rely heavily on CSS for definition -->
+	<!-- div can be described by "class" or "id" in text. IDs have a much higher specificity in CSS and must be defined individually -->
+	<!-- Classes are a little more general and may share attributes with similar elements. Using either, keep this in mind. -->
+	<div class="wrapper">
+		<!-- Going to divide the page into two main containers: a sidebar and a content area within wrapper -->
+		<div id="left-sidebar">
+			<div id="logo">
+				<h1>U<sup>2</sup>TM</h1>
+			</div>
+
+			<nav id="navigation">
+				<!-- Lists come in unordered (ul) and ordered numerically (ol) -->
+				<ul>
+					<!-- a href sends the page to the link provided (STUB: empty for now) -->
+					<li><a href="index.html">U<sup>2</sup>TM</a></li>
+					<li><a href="about.html">About UTM</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="#">Project Messages</a></li>
+					<li><a href="materials.html">Materials</a></li>
+				</ul>
+			</nav>
+
+			<section class="section-calendar">
+				<!-- Going to make calendar in ugly, clunky way to show tables for now -->
+				<div class="inner-calendar">
+					<table>
+						<caption>February 2016</caption>
+						<thead>
+							<tr>
+								<th scope="col" title="Sunday">Su</th>
+								<th scope="col" title="Monday">M</th>
+								<th scope="col" title="Tuesday">T</th>
+								<th scope="col" title="Wednesday">W</th>
+								<th scope="col" title="Thursday">Th</th>
+								<th scope="col" title="Friday">F</th>
+								<th scope="col" title="Saturday">S</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							  <td colspan="1" class="pad"><span>&nbsp;</span></td>
+							  <td><span>1</span></td>
+							  <td><span>2</span></td>
+							  <td><span>3</span></td>
+							  <td><span>4</span></td>
+							  <td><span>5</span></td>
+							  <td><span>6</span></td>
+							</tr>
+							<tr>
+							  <td><span>7</span></td>
+							  <td><span>8</span></td>
+							  <td><span>9</span></td>
+								<td><span>10</span></td>
+							  <td><span>11</span></td>
+							  <td><span>12</span></td>
+							  <td><span>13</span></td>
+							</tr>
+							<tr>
+
+							  <td><span>14</span></td>
+							  <td><span>15</span></td>
+							  <td><span>16</span></td>
+							  <td><span>17</span></td>
+							  <td><span>18</span></td>
+							  <td><span>19</span></td>
+							  <td><span>20</span></td>
+							</tr>
+							<tr>
+
+							  <td><span>21</span></td>
+							  <td><span>22</span></td>
+							  <td><span>23</span></td>
+								<td><span>24</span></td>
+							  <td><span>25</span></td>
+							  <td><span>26</span></td>
+							  <td><span>27</span></td>
+							</tr>
+							<tr>
+
+							  <td><span>28</span></td>
+							  <td><span>29</span></td>
+								<td class="pad" colspan="5"><span>&nbsp;</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div>
+
+		<div id="content">
+			<div class="logo-splash">
+				<h1 class="splash-name">UNR UTM</h1>
+				<p>A University of Nevada, Reno CS 426 Spring 2016 Capstone Project</p>
+			</div>
+
+			<div id="user-content">
+
+				<div id="messages-panel">
+                    <h1>Project Calendar</h1>
+
+                    <table>
+                        <caption><h2>January 2016</h2></caption>
+                        <thead>
+							<tr>
+								<th scope="col" title="Start Date">Start Date</th>
+								<th scope="col" title="Due Date">Due Date</th>
+								<th scope="col" title="Activity">Activity</th>
+                                <th scope="col" title="Team Member">Team Member</th>
+							</tr>
+						</thead>
+
+                        <tbody>
+                            <tr>
+                                <td><span>1/11</span></td>
+                                <td><span>1/11</span></td>
+                                <td><span>Phone Meeting with NASA</span></td>
+                                <td><span>All</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <caption><h2>February 2016</h2></caption>
+                        <thead>
+							<tr>
+								<th scope="col" title="Start Date">Start Date</th>
+								<th scope="col" title="Due Date">Due Date</th>
+								<th scope="col" title="Activity">Activity</th>
+                                <th scope="col" title="Team Member">Team Member</th>
+							</tr>
+						</thead>
+
+                        <tbody>
+                            <tr>
+                                <td><span>2/2</span></td>
+                                <td><span>2/5</span></td>
+                                <td><span>Flask Research</span></td>
+                                <td><span>Brit, Cami</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2/2</span></td>
+                                <td><span>2/5</span></td>
+                                <td><span>STOMP Research</span></td>
+                                <td><span>Zeph</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>1/24</span></td>
+                                <td><span>2/5</span></td>
+                                <td><span>Project Site Assignment 0</span></td>
+                                <td><span>All</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer will contain the contact and site-general navigation and sit below the wrapper class -->
+	<div class="footer">
+		<div id="site-navigation">
+			<nav id="site-nav">
+				<ul>
+					<!-- a href sends the page to the link provided (STUB: empty for now) -->
+					<li><a href="index.html">U<sup>2</sup>TM</a></li>
+					<li><a href="about.html">About UTM</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="project_messages.html">Project Messages</a></li>
+					<li><a href="materials.html">Materials</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="copyright">
+			<p> &copy; 2015-2016 University of Nevada, Reno
+		</div>
+	</div>
+</body>
+
+</html>
+<!-- Tags end like the above to signal that the section is complete -->
+<!-- Leaving these open would be confusing to the receiving browser, and at best, they would apply through the page -->
