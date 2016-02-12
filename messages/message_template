@@ -30,7 +30,7 @@
 				<!-- Going to make calendar in ugly, clunky way to show tables for now -->
 				<div class="inner-calendar">
 					<table>
-						<caption>January 2016</caption>
+						<caption>February 2016</caption>
 						<thead>
 							<tr>
 								<th scope="col" title="Sunday">Su</th>
@@ -44,49 +44,48 @@
 						</thead>
 						<tbody>
 							<tr>
-							  <td colspan="5" class="pad"><span>&nbsp;</span></td>
+							  <td colspan="1" class="pad"><span>&nbsp;</span></td>
 							  <td><span>1</span></td>
 							  <td><span>2</span></td>
-							</tr>
-							<tr>
 							  <td><span>3</span></td>
 							  <td><span>4</span></td>
 							  <td><span>5</span></td>
 							  <td><span>6</span></td>
+							</tr>
+							<tr>
 							  <td><span>7</span></td>
 							  <td><span>8</span></td>
 							  <td><span>9</span></td>
-							</tr>
-							<tr>
-							  <td><span>10</span></td>
+								<td><span>10</span></td>
 							  <td><span>11</span></td>
 							  <td><span>12</span></td>
 							  <td><span>13</span></td>
+							</tr>
+							<tr>
+
 							  <td><span>14</span></td>
 							  <td><span>15</span></td>
 							  <td><span>16</span></td>
-							</tr>
-							<tr>
 							  <td><span>17</span></td>
 							  <td><span>18</span></td>
 							  <td><span>19</span></td>
 							  <td><span>20</span></td>
+							</tr>
+							<tr>
+
 							  <td><span>21</span></td>
 							  <td><span>22</span></td>
 							  <td><span>23</span></td>
-							</tr>
-							<tr>
-							  <td><span>24</span></td>
+								<td><span>24</span></td>
 							  <td><span>25</span></td>
 							  <td><span>26</span></td>
 							  <td><span>27</span></td>
-							  <td><span>28</span></td>
-							  <td><span>29</span></td>
-							  <td><span>30</span></td>
 							</tr>
 							<tr>
-							  <td><span>31</span></td>
-							  <td class="pad" colspan="6"><span>&nbsp;</span></td>
+
+							  <td><span>28</span></td>
+							  <td><span>29</span></td>
+								<td class="pad" colspan="5"><span>&nbsp;</span></td>
 							</tr>
 						</tbody>
 					</table>
@@ -105,7 +104,7 @@
 				<h4>By: Your Name</h4>
 				<!--This is Where you should write your messages -->
             	<p>Write your message here :)</p>
-            <--****** Now that you have written the message, add a link to it on the messages and index page *******-->
+            <!--****** Now that you have written the message, add a link to it on the messages and index page *******-->
             </div>
         </div>
     </div>
